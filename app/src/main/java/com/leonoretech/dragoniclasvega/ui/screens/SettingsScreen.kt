@@ -78,17 +78,24 @@ fun SettingsScreen(viewModel: PlayerViewModel, onBack: () -> Unit, onAbout: () -
             title = { Text("Reset Save?") },
             text = { Text("This will erase all progress, coins, and unlocks. This cannot be undone.") },
             confirmButton = {
-                Text(
+                androidx.compose.material3.Text(
                     "RESET",
                     color = DangerRed,
-                    modifier = Modifier.clickable {
-                        viewModel.resetSave()
-                        showResetDialog = false
-                    }.padding(8.dp)
+                    modifier = Modifier
+                        .clickable {
+                            viewModel.resetSave()
+                            showResetDialog = false
+                        }
+                        .padding(8.dp)
                 )
             },
             dismissButton = {
-                Text("CANCEL", modifier = Modifier.clickable { showResetDialog = false }.padding(8.dp))
+                androidx.compose.material3.Text(
+                    "CANCEL",
+                    modifier = Modifier
+                        .clickable { showResetDialog = false }
+                        .padding(8.dp)
+                )
             }
         )
     }
