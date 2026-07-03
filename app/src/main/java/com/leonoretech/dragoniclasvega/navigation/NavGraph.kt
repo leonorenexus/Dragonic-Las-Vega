@@ -7,6 +7,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.leonoretech.dragoniclasvegas.navigation.Screen
 import com.leonoretech.dragoniclasvegas.ui.minigames.CyberReflexScreen
 import com.leonoretech.dragoniclasvegas.ui.minigames.DragonDodgeScreen
 import com.leonoretech.dragoniclasvegas.ui.minigames.DragonRunnerScreen
